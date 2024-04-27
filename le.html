@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup Form </title>
+
+        
+        <link rel="stylesheet" href="style.css">
+                
+        <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+                        
+    </head>
+    <body>
+        <div class="container">
+        <div class="form-registro">
+
+            <!-- Registration Form -->
+            <div class="form">
+
+                <form action="#">
+
+                    <div class="tabpanel">
+
+                        <span class="title">Registro</span>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your name" id="name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email">
+                            <i class="fa fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Create a password">
+                            <i class="fa fa-lock icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Confirm a password">
+                            <i class="fa fa-lock icon"></i>
+                            <i class="fa fa-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="termCon">
+                                <label for="termCon" class="text">Quiero ser administrador</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tabpanel hidden">
+
+                        <span class="title">Preguntas de Seguridad</span>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter first security question">
+                            <i class="fa fa-question-circle"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your answer">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter second security question">
+                            <i class="fa fa-question-circle"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your answer">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        
+
+                    </div>
+
+
+
+                    
+
+                    <div class="input-field button">
+                        <input type="button" value="prev" class="hidden" id="prev">
+                        <input type="button" value="next" id="next">
+                        <input type="submit" value="register" class="hidden" id="submit">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
